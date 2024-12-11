@@ -154,6 +154,10 @@ export type NativeStackNavigationOptions = {
    */
   headerBackVisible?: boolean;
   /**
+   * ID to locate this back button in tests.
+   */
+  headerBackTestID?: string;
+  /**
    * Title string used by the back button on iOS.
    * Defaults to the previous scene's title, or "Back" if there's not enough space.
    * Use `headerBackButtonDisplayMode: "minimal"` to hide it.

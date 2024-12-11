@@ -84,6 +84,7 @@ export function NativeStackView({ state, descriptors, describe }: Props) {
           headerLeft,
           headerTransparent,
           headerBackTitle,
+          headerBackTestID,
           presentation,
           contentStyle,
           ...rest
@@ -142,6 +143,7 @@ export function NativeStackView({ state, descriptors, describe }: Props) {
                                   : undefined
                               }
                               onPress={navigation.goBack}
+                              testID={headerBackTestID}
                             />
                           )
                         : headerLeft
